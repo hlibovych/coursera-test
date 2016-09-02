@@ -48,9 +48,8 @@ a.navbar-brand {
 .content{
 	/*background: #ccc;*/
 	padding: 20px;
-	border-radius: 20px;
+ 	border-radius: 20px;
 	color: #ccc;
-	margin-bottom: 20px;
 }
 
 h1, h2, a.navbar-brand {
@@ -68,7 +67,6 @@ h1 {
 h2 {
 	font-size: 1.2em;
 	font-style: italic;
-	margin: 30px 0;
 }
 
 p {
@@ -89,6 +87,7 @@ p:nth-of-type(1)::first-letter {
 }
 
 .content a {
+	margin-top: 20px;
 	display: block;
 	text-transform: uppercase;
 	font-family: "eloquent-jf-pro", sans-serif;
@@ -110,7 +109,13 @@ footer {
 	.content {
 		width: 90%;
 		margin: 0 auto 20px;
+		padding-top: 20px;
 	}
+
+	#Chicken, #Beef, #Sushi {
+		padding-top: 20px;
+	}/*to make navigating to section more pleasant by adding top padding*/
+
 	p:nth-of-type(1)::first-letter {
 		font-family: inherit;
 	    font-size: inherit;
@@ -124,5 +129,9 @@ footer {
 	p {
 		margin-bottom: 15px;
 		font-size: 1em;
+	}
+	h1 {
+		    top: 0;
+		    margin-bottom: -10px;
 	}
 }
