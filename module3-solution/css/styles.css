@@ -96,6 +96,10 @@ p:nth-of-type(1)::first-letter {
 	font-size: .8em;
 }
 
+#Chicken, #Beef, #Sushi {
+	margin-bottom: 30px;
+}
+
 footer {
 	margin-top: 20px;
 	margin-bottom: 50px;
@@ -114,6 +118,7 @@ footer {
 
 	#Chicken, #Beef, #Sushi {
 		padding-top: 20px;
+		margin-bottom: 0;
 	}/*to make navigating to section more pleasant by adding top padding*/
 
 	p:nth-of-type(1)::first-letter {
