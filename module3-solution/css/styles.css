@@ -1,0 +1,128 @@
+/************** Overriding the default navbar style*/
+
+nav.navbar-default, nav.navbar-default a.navbar-brand, .content {
+	background: #23172C;
+	color: #D77E97;
+}
+
+.navbar {
+	z-index: 0;
+	border-radius: 0;
+}
+
+a.navbar-brand {
+	padding-top: 18px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #D77E97;	
+}
+
+.navbar-default .navbar-toggle {
+	border: 1px solid #23172C;
+}
+
+.navbar-default ul.navbar-nav {
+	box-sizing: border-box;
+}
+
+.navbar-default .navbar-nav>li>a {
+	border: 1px solid #23172C;
+}
+
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:hover {
+	color: #D77E97;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+	border: 1px solid #D77E97;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background: #23172C;
+	border: 1px solid #D77E97;
+}
+
+/************** The content*/
+
+.content{
+	/*background: #ccc;*/
+	padding: 20px;
+	border-radius: 20px;
+	color: #ccc;
+	margin-bottom: 20px;
+}
+
+h1, h2, a.navbar-brand {
+	font-family: "eloquent-jf-pro",sans-serif;
+	color: #D77E97;
+}
+
+h1 {
+	margin-bottom: -36px;
+    z-index: 10;
+    position: relative;
+    top: -25px;
+}
+
+h2 {
+	font-size: 1.2em;
+	font-style: italic;
+	margin: 30px 0;
+}
+
+p {
+	margin-bottom: 30px;
+	clear: both;
+	font-size: 1.5em;
+	font-family: Verdana, sans-serif;
+}
+
+p:nth-of-type(1)::first-letter {
+    font-family: "eloquent-jf-pro", sans-serif;
+    font-size: 2.5em;
+    vertical-align: top;
+    margin-right: 1px;
+    float: left;
+    margin-top: .1em;
+    margin-bottom: -.5em;
+}
+
+.content a {
+	display: block;
+	text-transform: uppercase;
+	font-family: "eloquent-jf-pro", sans-serif;
+	text-decoration: underline;
+	color: white;
+	font-size: .8em;
+}
+
+footer {
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+/************** For small device*/
+
+@media (max-width: 768px) {
+	.content h2 {
+		font-size: 3vw;
+	}
+	.content {
+		width: 90%;
+		margin: 0 auto 20px;
+	}
+	p:nth-of-type(1)::first-letter {
+		font-family: inherit;
+	    font-size: inherit;
+	    vertical-align: inherit;
+	    margin-right: inherit;
+	    float: inherit;
+	    margin-top: inherit;
+	    margin-bottom: inherit;
+	}
+
+	p {
+		margin-bottom: 15px;
+		font-size: 1em;
+	}
+}
